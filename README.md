@@ -72,7 +72,7 @@ Applied fixes to the codebase
 
 Re-ran analysis to confirm resolution
 
-## (Photo here)
+vulnerabilities.png
 
 
 
@@ -88,7 +88,7 @@ Vulnerabilities were found across core application flows including customer regi
 
 After fixes were implemented, Psalm was rerun and the reported vulnerabilities in the analyzed files were resolved.
 
-## (Image here)
+code_fix.png
 
 
 
@@ -146,7 +146,7 @@ After fixes were implemented, Psalm was rerun and the reported vulnerabilities i
 
 ##### Presentation
 
-## (Image here)
+presentation_screenshot.png
 
 
 
