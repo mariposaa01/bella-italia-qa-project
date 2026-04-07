@@ -60,7 +60,10 @@ Investigated root causes of defects
 Applied fixes to the codebase
 Re-ran analysis to confirm resolution
 
+
 ![Vulnerabilities found by Psalm](vulnerabilities.png)
+
+
 
 
 
@@ -76,7 +79,11 @@ Vulnerabilities were found across core application flows including customer regi
 
 After fixes were implemented, Psalm was rerun and the reported vulnerabilities in the analyzed files were resolved.
 
+
+
 ![Code fixes after analysis](code_fix.png)
+
+
 
 
 
@@ -86,21 +93,13 @@ After fixes were implemented, Psalm was rerun and the reported vulnerabilities i
 
 
 
-
 #### Unsafe date handling in add\_res.php
 
 **Issue:** The argument passed to strtotime() might not be a string, which could lead to incorrect reservation date processing.
 
-
-
 **Impact:** Malformed or unexpected input could disrupt reservation timing and system behavior.
 
-
-
 **Fix:** Added validation to ensure the submitted date value was a string before processing it
-
-
-
 
 
 
@@ -108,11 +107,7 @@ After fixes were implemented, Psalm was rerun and the reported vulnerabilities i
 
 **Issue:** The reservation ID passed into MongoDB\\BSON\\ObjectId was not guaranteed to be a string, and reservation data could be accessed even when null.
 
-
-
 **Impact:** This could cause runtime errors or unexpected behavior when loading reservation updates.
-
-
 
 **Fix:** Added validation for reservation ID input and typecast the returned reservation object before access.
 
@@ -122,10 +117,7 @@ After fixes were implemented, Psalm was rerun and the reported vulnerabilities i
 
 **Issue:** Reservation and customer data were accessed without sufficient checks, even though the values could be null or objects rather than arrays.
 
-
-
 **Impact:** This could cause runtime errors and expose customer/reservation data to misuse if exploited.
-
 
 
 **Fix:** Typecast database results to arrays and added checks to confirm values existed before access.
@@ -134,9 +126,13 @@ After fixes were implemented, Psalm was rerun and the reported vulnerabilities i
 
 
 
+
 ## Presentation
 
 ![Project presentation screenshot](presentation_screenshot.png)
+
+
+
 
 
 
