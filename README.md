@@ -1,4 +1,4 @@
-#### Bella Italia Web Application Testing Project
+# Bella Italia Web Application Testing Project
 
 A security-focused QA project using static code analysis to identify and resolve vulnerabilities in a web application.
 
