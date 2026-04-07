@@ -43,6 +43,7 @@ Edge cases and error handling
 ## Testing Approach
 
 **Testing Type:**
+
 Static Code Analysis (White-box testing)
 Manual validation of fixes
 
