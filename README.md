@@ -56,9 +56,17 @@ MongoDB
 **Process:**
 
 Analyzed source code using Psalm
+
+
 Identified and categorized vulnerabilities
+
+
 Investigated root causes of defects
+
+
 Applied fixes to the codebase
+
+
 Re-ran analysis to confirm resolution
 
 
