@@ -4,7 +4,7 @@ A security-focused QA project using static code analysis to identify and resolve
 
 
 
-##### Overview
+## Overview
 
 
 
@@ -12,7 +12,7 @@ This project is based on a web-based booking application developed for a restaur
 
 
 
-##### Objectives
+## Objectives
 
 Develop a software application
 
@@ -26,7 +26,7 @@ Practice structured software testing methodologies
 
 
 
-##### Scope of Testing
+### Scope of Testing
 
 The following areas were tested:
 
@@ -44,7 +44,7 @@ Edge cases and error handling
 
 
 
-##### Testing Approach
+## Testing Approach
 
 **Testing Type:**
 
@@ -78,7 +78,7 @@ Re-ran analysis to confirm resolution
 
 
 
-##### Key Findings
+## Key Findings
 
 Psalm identified 150 vulnerabilities in the PHP web application during static code analysis.
 
@@ -94,11 +94,11 @@ After fixes were implemented, Psalm was rerun and the reported vulnerabilities i
 
 
 
-##### Vulnerabilities Analysis and Fixes
+## Vulnerabilities Analysis and Fixes
 
 
 
-###### Unsafe date handling in add\_res.php
+#### Unsafe date handling in add\_res.php
 
 **Issue:** The argument passed to strtotime() might not be a string, which could lead to incorrect reservation date processing.
 
@@ -114,7 +114,7 @@ After fixes were implemented, Psalm was rerun and the reported vulnerabilities i
 
 
 
-###### Invalid reservation lookup in update-form.php
+#### Invalid reservation lookup in update-form.php
 
 **Issue:** The reservation ID passed into MongoDB\\BSON\\ObjectId was not guaranteed to be a string, and reservation data could be accessed even when null.
 
@@ -128,7 +128,7 @@ After fixes were implemented, Psalm was rerun and the reported vulnerabilities i
 
 
 
-###### Null and invalid array access in staffWel.php
+#### Null and invalid array access in staffWel.php
 
 **Issue:** Reservation and customer data were accessed without sufficient checks, even though the values could be null or objects rather than arrays.
 
@@ -144,7 +144,7 @@ After fixes were implemented, Psalm was rerun and the reported vulnerabilities i
 
 
 
-##### Presentation
+## Presentation
 
 ![Project presentation screenshot](presentation_screenshot.png)
 
@@ -152,7 +152,7 @@ After fixes were implemented, Psalm was rerun and the reported vulnerabilities i
 
 
 
-##### Key Learnings
+## Key Learnings
 
 Developed a strong understanding of the software testing lifecycle (STLC), including designing effective test cases, identifying vulnerabilities, and clearly documenting issues. Gained practical experience using static code analysis to detect and fix security flaws, reinforcing the importance of validating input and handling edge cases. This project emphasized the importance of thorough testing before deployment and adopting a security-focused mindset when building and evaluating software.
 
