@@ -15,13 +15,9 @@ This project is based on a web-based booking application developed for a restaur
 ## Objectives
 
 Develop a software application
-
 Validate core functionality of the web application
-
 Identify and document defects
-
 Ensure the application meets expected requirements
-
 Practice structured software testing methodologies
 
 
@@ -47,29 +43,21 @@ Edge cases and error handling
 ## Testing Approach
 
 **Testing Type:**
-
 Static Code Analysis (White-box testing)
-
 Manual validation of fixes
 
 **Tools Used:**
 
 Psalm (Static Code Analysis Tool)
-
 PHP
-
 MongoDB
 
 **Process:**
 
 Analyzed source code using Psalm
-
 Identified and categorized vulnerabilities
-
 Investigated root causes of defects
-
 Applied fixes to the codebase
-
 Re-ran analysis to confirm resolution
 
 ![Vulnerabilities found by Psalm](vulnerabilities.png)
@@ -98,6 +86,7 @@ After fixes were implemented, Psalm was rerun and the reported vulnerabilities i
 
 
 
+
 #### Unsafe date handling in add\_res.php
 
 **Issue:** The argument passed to strtotime() might not be a string, which could lead to incorrect reservation date processing.
@@ -109,6 +98,7 @@ After fixes were implemented, Psalm was rerun and the reported vulnerabilities i
 
 
 **Fix:** Added validation to ensure the submitted date value was a string before processing it
+
 
 
 
