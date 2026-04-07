@@ -22,7 +22,7 @@ Practice structured software testing methodologies
 
 
 
-### Scope of Testing
+## Scope of Testing
 
 The following areas were tested:
 
